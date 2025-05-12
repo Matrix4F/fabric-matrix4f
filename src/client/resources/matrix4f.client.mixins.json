@@ -1,0 +1,11 @@
+{
+	"required": true,
+	"package": "dev.matrix4f.mod.mixin.client",
+	"compatibilityLevel": "JAVA_21",
+	"client": [
+		"Matrix4FMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	}
+}
