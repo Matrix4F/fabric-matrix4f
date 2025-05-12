@@ -1,0 +1,38 @@
+{
+	"schemaVersion": 1,
+	"id": "matrix4f",
+	"version": "${version}",
+	"name": "Mix4J",
+	"description": "Test Mod",
+	"authors": [
+		"Matrix4F"
+	],
+	"contact": {
+		"homepage": "https://github.com/Matrix4F/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/matrix4f/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"client": [
+			"dev.matrix4f.mod.Matrix4F"
+		]
+	},
+	"mixins": [
+		"matrix4f.mixins.json",
+		{
+			"config": "matrix4f.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.16.10",
+		"minecraft": "~1.21.5",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
